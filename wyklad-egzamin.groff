@@ -1,0 +1,51 @@
+.TL
+Statystyka opisowa z jezykiem R w ekonomii
+.NH
+Przedmiot zainteresowania statystyki
+.PP
+Przedmiotem zainteresowania statystyki sa ilosciowe metody badania zjawisk masowych.
+.NH
+Cechy zmienne a cechy stale
+.NH 2
+Cechy stale
+.PP
+Cechy stale okreslaja jednostki pod wzgledem rzeczowym (co?), czasowym (kiedy?) oraz przestrzennym (gdzie?). Cechy stale sa wspolne wszystkim jednostkom badanej zbiorowosci. Nie podlegaja badaniu, jedynie decyduja o zaliczeniu jednostek do okreslonej zbiorowosci.
+.NH 2
+Cechy zmienne to wlasciwosci, ktorymi roznia sie poszczegolne jednostki statystyczne. Dziela sie na:
+.IP \(bu 5
+Jakosciowe (niemierzalne) - nie da sie ich zmierzy, jedynie okreslic slownie (np. pochodzenie spoleczne, plec, kolor wlosow)
+.IP \(bu
+Ilosciowe - mozna je wyrazic za pomoca liczb o roznych mianach (np. wzrost w cm, wiek w latach, zarobki w zl).Dziela sie one dalej na:
+.RS
+.IP \(bu
+Zmienne skokowe - moga sie wyrazac jedynie okreslonymi liczbami, bez wartosci posrednich (np. liczba studentow w grupie, liczba pokoi w mieszkaniu). Cechy skokowe przyjmujace przyjmujace bardzo duzo wartosci to tzw. cechy quasi ciagle (np. zarobki w groszach)
+.IP \(bu
+Zmienne ciagle - moga przyjmowac kazda wartosc z okreslonego przedzialu liczbowego
+.RE
+.NH
+Skale pomiarowe wraz z omowieniem
+.PP
+Wyroznia sie cztery skale pomiarowe:
+.NH 2
+Skala nominalna (niemetryczna)
+.PP
+Najmniej precyzyjny sposob pomiaru. Liczby pelnia jedynie role umownych sumboli sluzacych do identyfikacji jednostek statystycznych i ich klasyfikacji do wyroznionych kategorii. Jedyna dopuszczalna operacja matematyczna to zliczenie jednostek nalezacych do okreslonej kategorii danej cechy i obliczanie np. proporcji, odsetek. O poszczegolnych wariantach danej cechy mozna powiedziec tylko, ze sa rozne lub rowne (np. gatunki sera, numery telefonow, grupy krwi).
+.NH 2
+Skala porzadkowa (rangowa - niemetryczna)
+.PP
+Posiada wszystkie cechy skali nominalnej, dodatkowo pozwala na porzadkowanie jednostek statystycznych w ramach wyroznionych kategorii pod wzgledem natezenia badanej cechy. Mozna powiedziec nie tylko, czy dane warianty sa rowne lub rozne, ale rowniez okreslic, czy jeden jest wiekszy czy mniejszy od drugiego. W skali nominalnej liczby, zwane rangami, wyznaczaja kolejnosc wystepowania jednostek, ale nie okreslaja odleglosci miedzy nimi (np. sok A jest slodszy od soku B, ale nie mozna okreslic o ile slodszy). Porzadkowanie w tej skali moze byc slabe (np. marka A jest tak samo dobra lub mniej dobra od marki B - relacja 
+.I "<="
+). Przykladami skali norminalnej sa skala Richtera, stopnie wojskowe, wysztalcenie, itp. Skala porzadkowa jest bardziej precyzyjna niz nominalna.
+.NH 2
+Skala przedzialowa (interwalowa - metryczna)
+.PP
+Posiada wszystkie wlasnosci skali porzadkowej, a oprocz tego umozliwia okreslenie odleglosci (dystansu) miedzy jednostkami. W skali przedzialowej punk zerowy jest ustalony arbitralnie (brak zera absolutnego, np. skala Celsjusza - miedzy 10 stopniami a 20 jest 10 stopni roznicy, ale to nie znaczy, ze 20 stopni jest 2 razy cieplejsze niz 10 stopni)
+.PP
+Posiada wszystkie wlasnosci skali porzadkowej, a oprocz tego umozliwia okreslenie odleglosci (dystansu) miedzy jednostkami. W skali przedzialowej punk zerowy jest ustalony arbitralnie (brak zera absolutnego, np. skala Celsjusza - miedzy 10 stopniami a 20 jest 10 stopni roznicy, ale to nie znaczy, ze 20 stopni jest 2 razy cieplejsze niz 10 stopni). Na liczbach w skali przedzialowej nie mozna wykonywac dzielenia.
+.NH 2
+Skala stosunkowa (ilorazowa)
+.PP
+Posiada wlasnosci trzech poprzednich skal, ale posiada naturalny punkt zerowy. Punkt zerowy oznacza brak danej cechy. Mozna wykonywac na niech wszystkie operacje matematyczne lacznie z dzieleniem. Przykladem moze byc temperatura w stopniach Kelvina, dlugosc, ciezar, cena towaru.
+.NH
+Rodzaje badan statystycznych
+
