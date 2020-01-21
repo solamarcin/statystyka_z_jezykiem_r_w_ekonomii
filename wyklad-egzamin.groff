@@ -40,8 +40,6 @@ Posiada wszystkie cechy skali nominalnej, dodatkowo pozwala na porzadkowanie jed
 Skala przedzialowa (interwalowa - metryczna)
 .PP
 Posiada wszystkie wlasnosci skali porzadkowej, a oprocz tego umozliwia okreslenie odleglosci (dystansu) miedzy jednostkami. W skali przedzialowej punk zerowy jest ustalony arbitralnie (brak zera absolutnego, np. skala Celsjusza - miedzy 10 stopniami a 20 jest 10 stopni roznicy, ale to nie znaczy, ze 20 stopni jest 2 razy cieplejsze niz 10 stopni)
-.PP
-Posiada wszystkie wlasnosci skali porzadkowej, a oprocz tego umozliwia okreslenie odleglosci (dystansu) miedzy jednostkami. W skali przedzialowej punk zerowy jest ustalony arbitralnie (brak zera absolutnego, np. skala Celsjusza - miedzy 10 stopniami a 20 jest 10 stopni roznicy, ale to nie znaczy, ze 20 stopni jest 2 razy cieplejsze niz 10 stopni). Na liczbach w skali przedzialowej nie mozna wykonywac dzielenia.
 .NH 2
 Skala stosunkowa (ilorazowa)
 .PP
