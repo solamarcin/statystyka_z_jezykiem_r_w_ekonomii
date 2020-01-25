@@ -1,3 +1,7 @@
+.EQ
+delim $$
+.EN
+
 .TL
 Statystyka opisowa z jezykiem R w ekonomii
 .NH
@@ -23,6 +27,48 @@ Zmienne skokowe - moga sie wyrazac jedynie okreslonymi liczbami, bez wartosci po
 Zmienne ciagle - moga przyjmowac kazda wartosc z okreslonego przedzialu liczbowego
 .RE
 .NH
+Pomiar wielkosci prostej i zlozonej oraz jego blad (niepewnosc)
+.NH 2
+Pomiary proste (bezposrednie)
+.PP dokonywane sa bezposrednio za pomoca przyrzadow pomiarowych, np. pomiar dlugosci wykonany suwmiarka, pomiar masy ciala za pomoca wagi, pomiar czasu za pomoca stopera.
+.NH 2
+Pomiary zlozone (posrednie)
+.PP
+Polegaja na wyznaczaniu wartosci wielkosci zlozonej na podstawie znanych zaleznosci miedzy roznymi wielkosciami mierzonymi bezposrednio,
+np. pomiar opornosci elektrycznej metoda techniczna na podstawie zmierzonych bezposrednio wartosci natezenia i napiecia.
+.PP
+.B "Niepewnosc pomiaru"
+ jest miara rozrzutu wynikow powtarzanych pomiarow danej wielkosci fizycznej.
+Zapisujac wynik pomiaru fizycznego $x$ nalezy wyraznie zaznaczyc jednostke podanej wartosci i opatrzyc przedzialem niepewnosci $DELTA x$:
+
+.EQ
+x +- DELTA x
+.EN
+
+np. zmierzona mikrometrem srednica drutu $d$ wynosci $d=(2,53 +- 0,01)mm$.
+.PP
+Z powodu wystepowania przypadkowych niepewnosci (bledow) pomiarowych,
+powstarzanie pomiaru wielkosci fizycznej daje rozne wyniki.
+Otrzymane wartosci (wyniki) rozkladaja sie wokol wartosci rzeczywistej a ich rozrzut zalezy od dokladnosci prowadzonych pomiarow.
+Niepewnosci przypadkowe mozna zmniejszyc stosujac dokladniejsze przyrzady i dbajac o zapewnienie niezmiennych warunkow doswiadczenia - nie mozna ich jednak calkowicie uniknac.
+.PP
+.B "Bledy grube" 
+powstaja wskutek falszywego odczytu przyrzadu lub ewidentnej pomylki eksperymentatora, np. zapisanie wyniku pomiaru dlugosci w centrymetrach zamiast w milimetrach.
+Pomiar obarczony bledem grubym rozni sie zasadniczo od pozostalych wynikow i mozna go latwo zauwazyc. Powtarzanie pomiarow pozwala zatem dostrzec i wyeliminowac wyniki obarczone bledem grubym.
+.PP
+.B "Bledy systematyczne" 
+wynikaja z wadliwego dzialania przyrzadu pomiarowego (np. amperomierz ze skrzywiona wskazowka, spieszacy sie stoper itp.) 
+lub ze zle zaprojektowanego doswiadczenia (np. waga jest ustawiona blisko grzejnika i jedno ramie jej belki jest dluzsze od drugiego).
+W takich przypadkach wystepuje stala roznica miedzy wartosciami zmierzonymi i wartoscia rzeczywista.
+Bledy systematyczne mozna eliminowac przez wprowadzenie poprawek lub takie projektowanie ukladow pomiarowych aby bledy te nie wystepowaly.
+.SH
+Ocena niepewnosci przypadkowych
+.PP
+Wielokrotne niezalezne powstarzanie tego samego pomiaru fizycznego pozwala otrzymac serie wynikow $x sub 1, x sub 2, x sub 3, ..., x sub n$, gdzie $n$ - liczba wykonanych pomiarow. Rzeczywistej wartosci wielkosci fizycznej nie znamy ale mozna wykazac, ze najbardziej zblizona do niej jest srednia arytmetyczna otrzymanych wynikow $x bar$
+.EQ
+x bar = 1 over n sum from i=1 to n {x sub i}
+.EN
+.NH
 Skale pomiarowe wraz z omowieniem
 .PP
 Wyroznia sie cztery skale pomiarowe:
@@ -46,4 +92,54 @@ Skala stosunkowa (ilorazowa)
 Posiada wlasnosci trzech poprzednich skal, ale posiada naturalny punkt zerowy. Punkt zerowy oznacza brak danej cechy. Mozna wykonywac na niech wszystkie operacje matematyczne lacznie z dzieleniem. Przykladem moze byc temperatura w stopniach Kelvina, dlugosc, ciezar, cena towaru.
 .NH
 Rodzaje badan statystycznych
+.IP \(bu
+.B "Badania pelne (calkowite, wyczerpujace)" ,
+obejmujace wszystkie jednostki danej zbiorowosci statystycznej
+.RS 5
+.RE
+.IP \(bu
+.B "Badania niepelne (czesciowe)" ,
+obejmujace niektore jednostki zbiorowosci statystycznej
+.RS 5
+Decyzja o przeprowadzeniu badania czesciowego zamiast pelnego moze byc podjeta z nastepujacych przyczyn:
+.RS 5
+.IP \(bu
+zbiorowosc statystyczna jest tak liczna, ze badanie pelne byloby zbyt kosztowne badz wymagaloby zbyt dlugiego czasu
+.IP \(bu
+badanie ma charakter niszczacy (np. badanie jakosci konserw)
+.IP \(bu
+chodzi jedynie o wyniki orientacyjne
+.RE
+
+.PP
+Zarowno badanie pelne jak i czesciowe moga byc ciagle, okresowe lub dorazne.
+.RS 5
+.IP \(bu
+.B "Badania ciagle" -
+przeprowadzane i analizowane sukcesywnie oraz nieprzerwanie
+.IP \(bu
+.B "Badania okresowe" -
+podejmowane w pewnych, zazwyczaj scisle okreslonych, odstepach czasu
+(np. coroczne spisy rolne czy przeprowadzane co 10 lat powszechne spisy ludnosci).
+.IP \(bu
+.B "Badania dorazne" -
+przeprowadzane w pewnych szczegolnych okolicznosciach
+spowodowanych z reguly nieprzewidzianymi przyczynami
+(np. badanie dotyczace strat czasu pracy wywolanych epidemia grypy, badanie strat materialnych spowodowanych powodzia lub pozarem).
+.RE
+.RE
+.IP \(bu
+.B "Szacunki interpolacyjne i ekstrapolacyjne"
+.RS 5
+.IP \(bu
+.B Interpolacja
+polega na szacowaniu nieznanych wartosci cechy na podstawie znanych wartosci sasiednich (pozniejszych i wczesniejszych)
+.IP \(bu
+.B Ekstrapolacja
+polega na szacowaniu wartosci wykraczajacych poza przedzial wartosci znanych.
+.RE
+.PP
+Zarowno ekstrapolacja jak i interpolacja moga miec charakter liniowy lub nieliniowy.
+Interpolacja i ekstrapolacja liniowa opieraja sie na zalozeniu proporcjonalnego rozkladu wartosci cechy pomiedzy liczebnosci lub jednostki czasu.
+.NH
 
